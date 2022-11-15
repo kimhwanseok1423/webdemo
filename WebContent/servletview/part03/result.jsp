@@ -14,5 +14,6 @@ MemberDTO dto =(MemberDTO)request.getAttribute("dto");
 %>
 
 <p><%=dto.getFid() %> / <%=dto.getFpass() %></p>
+<p>${requestScope.dto.fid } / ${requestScope.dto.fpass} </p>
 </body>
 </html>
